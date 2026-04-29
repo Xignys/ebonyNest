@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Nido de Ébano — Taberna de Aventuras</title>
+
+  <!-- Bootstrap 5.3.3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons 1.11 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-dark nido-nav sticky-top">
+    <div class="container">
+      <a class="navbar-brand nido-brand" href="#inicio">El Nido de Ébano</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-lg-2">
+          <li class="nav-item"><a class="nav-link nido-nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link nido-nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link nido-nav-link" href="#calendario">Calendario</a></li>
+          <li class="nav-item"><a class="nav-link nido-nav-link" href="#nosotros">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link nido-nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <a href="https://www.facebook.com/elnidodeebano/" target="_blank" class="btn nido-btn-outline btn-sm d-flex align-items-center gap-2">
+          <i class="bi bi-facebook"></i> Facebook
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="inicio" class="nido-hero d-flex align-items-center">
+    <div class="nido-hero-overlay"></div>
+    <div class="nido-damask-bg"></div>
+    <div class="container position-relative z-1 text-center py-5">
+      <div class="nido-logo-wrap mx-auto mb-4">
+        <img src="logo_transparente.png" alt="Logo El Nido de Ébano" class="img-fluid nido-logo-img" />
+      </div>
+      <p class="nido-subtitle mb-2">— Taberna de Aventuras —</p>
+      <h1 class="nido-title display-2 fw-bold mb-3">El Nido<br>de Ébano</h1>
+      <p class="nido-tagline mx-auto mb-4">
+        Un refugio para los que caminan entre dragones, dados y leyendas.<br>
+        Tu próxima historia comienza aquí.
+      </p>
+      <a href="#servicios" class="btn nido-btn-hero px-4 py-3">
+        <i class="bi bi-stars me-2"></i>Explorar el Nido
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DIVIDER ═══════════════════════════ -->
+  <div class="nido-divider text-center py-4">
+    <span class="nido-gem">◆ ◆ ◆</span>
+  </div>
+
+  <!-- ═══════════════════════════ SERVICIOS ═══════════════════════════ -->
+  <section id="servicios" class="nido-section py-5">
+    <div class="container">
+      <p class="nido-section-tag text-center mb-1">¿Qué encontrarás aquí?</p>
+      <h2 class="nido-section-title text-center mb-2">Servicios del Nido</h2>
+      <p class="nido-section-desc text-center mx-auto mb-5">
+        Próximamente — estos son los grimorios en los que trabaja nuestro DM.
+      </p>
+      <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-dice-5"></i>
+            </div>
+            <h3 class="nido-card-title">Partidas de D&amp;D</h3>
+            <p class="nido-card-text">Sesiones de Dungeons &amp; Dragons guiadas por nuestro DM en un ambiente inmersivo y acogedor para novatos y veteranos.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-calendar2-check"></i>
+            </div>
+            <h3 class="nido-card-title">Reserva de Mesas</h3>
+            <p class="nido-card-text">Reserva tu espacio para tu grupo de aventureros. Mesas privadas con ambiente especial para rol y cartas coleccionables.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-cup-hot"></i>
+            </div>
+            <h3 class="nido-card-title">Consumibles &amp; Bebidas</h3>
+            <p class="nido-card-text">Pociones de la casa, botanas mágicas y menú temático para acompañar cada sesión de aventuras en el Nido.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-trophy"></i>
+            </div>
+            <h3 class="nido-card-title">Torneos &amp; Eventos</h3>
+            <p class="nido-card-text">One-shots especiales, torneos, eventos de temporada y campañas con historia propia para toda la comunidad.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-bag-heart"></i>
+            </div>
+            <h3 class="nido-card-title">Tienda de Dados &amp; Minis</h3>
+            <p class="nido-card-text">Sets de dados especiales, miniaturas pintadas, libros de reglas y accesorios para el jugador serio.</p>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="nido-card h-100 p-4 reveal">
+            <span class="nido-badge">Próximo</span>
+            <div class="nido-card-icon mb-3">
+              <i class="bi bi-shield-star"></i>
+            </div>
+            <h3 class="nido-card-title">Membresías del Gremio</h3>
+            <p class="nido-card-text">Únete al gremio: descuentos, acceso prioritario a eventos y beneficios exclusivos para miembros frecuentes.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DIVIDER ═══════════════════════════ -->
+  <div class="nido-divider text-center py-4">
+    <span class="nido-gem">◆</span>
+  </div>
+
+  <!-- ═══════════════════════════ LORE ═══════════════════════════ -->
+  <section id="nosotros" class="nido-section py-5">
+    <div class="container">
+      <p class="nido-section-tag text-center mb-1">El Pergamino de Origen</p>
+      <h2 class="nido-section-title text-center mb-5">Sobre el Nido</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="nido-lore-box p-4 p-md-5 reveal">
+            <p class="nido-lore-text">
+              En las sombras de la ciudad, donde los mapas terminan y las leyendas comienzan, existe un lugar que no aparece en ningún directorio ordinario. <strong>El Nido de Ébano</strong> es refugio, taberna y portal a mundos imposibles.
+            </p>
+            <p class="nido-lore-text">
+              Nuestro <strong>Dungeon Master</strong> ha tejido incontables historias con dados, candiles y voluntad. Aquí cada partida es única, cada mesa tiene su propia mitología, y cada aventurero es bienvenido sin importar su nivel de experiencia.
+            </p>
+            <p class="nido-lore-text mb-0">
+              ¿Escuchas el graznido de los kenkus en las vigas? <strong>Son buenos presagios.</strong> Siéntate. Lanza el dado. Tu historia ya ha comenzado.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CALENDARIO ═══════════════════════════ -->
+  <section id="calendario" class="nido-section py-5">
+    <div class="container">
+      <p class="nido-section-tag text-center mb-1">Próximas Aventuras</p>
+      <h2 class="nido-section-title text-center mb-2">Calendario</h2>
+      <p class="nido-section-desc text-center mx-auto mb-5">Las fechas se anunciarán pronto. Mantente al tanto en nuestro Facebook.</p>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-4 reveal">
+          <div class="nido-event-card p-4 text-center">
+            <div class="nido-event-date mb-2"><span class="nido-event-num">??</span><span class="nido-event-month">ENE</span></div>
+            <h4 class="nido-card-title">One-Shot de Inauguración</h4>
+            <p class="nido-card-text">Una aventura de una noche para conocer el Nido y tu mesa de juego.</p>
+            <span class="badge nido-badge-outline">Por confirmar</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 reveal">
+          <div class="nido-event-card p-4 text-center">
+            <div class="nido-event-date mb-2"><span class="nido-event-num">??</span><span class="nido-event-month">FEB</span></div>
+            <h4 class="nido-card-title">Torneo de Dados</h4>
+            <p class="nido-card-text">Compite en el primer torneo oficial del Nido. Premios para los tres primeros lugares.</p>
+            <span class="badge nido-badge-outline">Por confirmar</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 reveal">
+          <div class="nido-event-card p-4 text-center">
+            <div class="nido-event-date mb-2"><span class="nido-event-num">??</span><span class="nido-event-month">MAR</span></div>
+            <h4 class="nido-card-title">Campaña Larga</h4>
+            <p class="nido-card-text">Inicio de campaña multi-sesión. Cupos limitados — inscríbete con anticipación.</p>
+            <span class="badge nido-badge-outline">Por confirmar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DIVIDER ═══════════════════════════ -->
+  <div class="nido-divider text-center py-4">
+    <span class="nido-gem">◆ ◆ ◆</span>
+  </div>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer id="contacto" class="nido-footer pt-5 pb-4">
+    <div class="container">
+
+      <!-- Kenkus chibi SVG row -->
+      <div class="d-flex justify-content-center align-items-end flex-wrap gap-3 mb-4">
+        <!-- Mago -->
+        <svg width="54" height="68" viewBox="0 0 58 72" xmlns="http://www.w3.org/2000/svg" opacity="0.7"><ellipse cx="29" cy="52" rx="16" ry="18" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><circle cx="29" cy="26" r="14" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><polygon points="29,21 38,28 29,30" fill="#6a6a7a"/><circle cx="24" cy="21" r="3" fill="#c8cdd4"/><circle cx="24" cy="21" r="1.7" fill="#0e0f18"/><circle cx="23" cy="20" r="0.7" fill="#fff"/><polygon points="29,2 18,15 40,15" fill="#222639" stroke="#c8cdd4" stroke-width="0.7"/><ellipse cx="29" cy="15" rx="11" ry="3" fill="#222639" stroke="#c8cdd4" stroke-width="0.7"/><circle cx="34" cy="8" r="2" fill="#c8cdd4" opacity="0.5"/><line x1="29" y1="68" x2="25" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="29" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="33" y2="72" stroke="#6a6a7a" stroke-width="1.2"/></svg>
+        <!-- DM Coronado -->
+        <svg width="66" height="80" viewBox="0 0 70 85" xmlns="http://www.w3.org/2000/svg" opacity="0.85"><ellipse cx="35" cy="62" rx="20" ry="22" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="1"/><circle cx="35" cy="31" r="18" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="1"/><polygon points="20,18 25,8 30,16 35,6 40,16 45,8 50,18" fill="#c8cdd4" opacity="0.85"/><ellipse cx="35" cy="18" rx="15" ry="3" fill="#c8cdd4" opacity="0.6"/><circle cx="25" cy="9" r="2" fill="#e2e5ea"/><circle cx="35" cy="7" r="2" fill="#e2e5ea"/><circle cx="45" cy="9" r="2" fill="#e2e5ea"/><polygon points="35,29 44,34 35,38 26,34" fill="#6a6a7a"/><circle cx="28" cy="26" r="4" fill="#c8cdd4"/><circle cx="28" cy="26" r="2.2" fill="#0e0f18"/><circle cx="27" cy="25" r="0.9" fill="#fff"/><circle cx="42" cy="26" r="4" fill="#c8cdd4"/><circle cx="42" cy="26" r="2.2" fill="#0e0f18"/><circle cx="41" cy="25" r="0.9" fill="#fff"/><rect x="3" y="55" width="18" height="14" rx="1" fill="#222639" stroke="#c8cdd4" stroke-width="0.7"/><line x1="35" y1="82" x2="30" y2="85" stroke="#6a6a7a" stroke-width="1.5"/><line x1="35" y1="82" x2="35" y2="85" stroke="#6a6a7a" stroke-width="1.5"/><line x1="35" y1="82" x2="40" y2="85" stroke="#6a6a7a" stroke-width="1.5"/></svg>
+        <!-- Rogue -->
+        <svg width="54" height="68" viewBox="0 0 58 72" xmlns="http://www.w3.org/2000/svg" opacity="0.7"><ellipse cx="29" cy="52" rx="16" ry="18" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><circle cx="29" cy="26" r="14" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><path d="M15 20 Q18 8 29 8 Q40 8 43 20 Q40 14 29 14 Q18 14 15 20Z" fill="#0e0f18" opacity="0.8"/><polygon points="29,21 37,28 29,30" fill="#6a6a7a"/><circle cx="24" cy="22" r="3.2" fill="#c8cdd4"/><circle cx="24" cy="22" r="1.8" fill="#0e0f18"/><circle cx="23" cy="21" r="0.7" fill="#fff"/><line x1="42" y1="44" x2="50" y2="56" stroke="#8a9099" stroke-width="1.5"/><polygon points="42,44 44,40 46,44" fill="#8a9099"/><line x1="29" y1="68" x2="25" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="29" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="33" y2="72" stroke="#6a6a7a" stroke-width="1.2"/></svg>
+        <!-- Bardo -->
+        <svg width="54" height="68" viewBox="0 0 58 72" xmlns="http://www.w3.org/2000/svg" opacity="0.7"><ellipse cx="29" cy="52" rx="16" ry="18" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><circle cx="29" cy="26" r="14" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><polygon points="29,22 38,28 29,30" fill="#6a6a7a"/><circle cx="24" cy="20" r="3" fill="#c8cdd4"/><circle cx="24" cy="20" r="1.7" fill="#0e0f18"/><circle cx="23" cy="19" r="0.7" fill="#fff"/><ellipse cx="29" cy="14" rx="13" ry="4" fill="#2a1a1a" stroke="#c8cdd4" stroke-width="0.6"/><ellipse cx="29" cy="12" rx="10" ry="6" fill="#2a1a1a"/><ellipse cx="45" cy="54" rx="8" ry="10" fill="#3a3020" stroke="#c8cdd4" stroke-width="0.7"/><circle cx="45" cy="54" r="3" fill="none" stroke="#c8cdd4" stroke-width="0.5"/><line x1="29" y1="68" x2="25" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="29" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="33" y2="72" stroke="#6a6a7a" stroke-width="1.2"/></svg>
+        <!-- Paladin -->
+        <svg width="54" height="68" viewBox="0 0 58 72" xmlns="http://www.w3.org/2000/svg" opacity="0.7"><ellipse cx="29" cy="52" rx="16" ry="18" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><circle cx="29" cy="26" r="14" fill="#1a1d2e" stroke="#c8cdd4" stroke-width="0.8"/><polygon points="29,22 38,27 29,29" fill="#6a6a7a"/><circle cx="24" cy="21" r="3" fill="#c8cdd4"/><circle cx="24" cy="21" r="1.7" fill="#0e0f18"/><circle cx="23" cy="20" r="0.7" fill="#fff"/><path d="M5 44 L5 56 Q5 62 12 64 Q19 62 19 56 L19 44Z" fill="#1e2030" stroke="#c8cdd4" stroke-width="0.8"/><line x1="12" y1="44" x2="12" y2="64" stroke="#c8cdd4" stroke-width="0.5" opacity="0.4"/><line x1="5" y1="54" x2="19" y2="54" stroke="#c8cdd4" stroke-width="0.5" opacity="0.4"/><line x1="29" y1="68" x2="25" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="29" y2="72" stroke="#6a6a7a" stroke-width="1.2"/><line x1="29" y1="68" x2="33" y2="72" stroke="#6a6a7a" stroke-width="1.2"/></svg>
+      </div>
+
+      <hr class="nido-hr mb-4" />
+
+      <div class="row align-items-center gy-3">
+        <div class="col-12 col-md-4 text-center text-md-start">
+          <span class="nido-brand fs-6">El Nido de Ébano</span>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <a href="https://www.facebook.com/elnidodeebano/" target="_blank" class="nido-footer-link me-3">
+            <i class="bi bi-facebook me-1"></i>Facebook
+          </a>
+          <span class="nido-footer-link opacity-50" style="cursor:default;">
+            <i class="bi bi-instagram me-1"></i>Próximamente
+          </span>
+        </div>
+        <div class="col-12 col-md-4 text-center text-md-end">
+          <small class="nido-footer-copy">© 2025 · Que los dados sean a tu favor</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS 5.3.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => revealObs.observe(el));
+    // Navbar shrink
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nido-nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
+</body>
+</html>

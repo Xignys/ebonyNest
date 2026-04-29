@@ -1,0 +1,465 @@
+/* ══════════════════════════════════════════════════════
+   EL NIDO DE ÉBANO — Custom CSS
+   Base: Bootstrap 5.3.3
+   Fuentes: Cinzel Decorative · Cinzel · Lora
+   ══════════════════════════════════════════════════════ */
+
+/* ── Variables ──────────────────────────────────────── */
+:root {
+  --nido-bg:        #1c1f2e;
+  --nido-bg2:       #141724;
+
+4;
+  --nido-silver:    #c8cdd4;
+  --nido-silver2:   #e2e5ea;
+  --nido-silver3:   #8a9099;
+  --nido-ebony:     #0e0f18;
+  --nido-border:    rgba(200, 205, 212, 0.18);
+  --nido-border2:   rgba(200, 205, 212, 0.35);
+  --nido-font-head: 'Cinzel', serif;
+  --nido-font-deco: 'Cinzel Decorative', 'Cinzel', serif;
+  --nido-font-body: 'Lora', Georgia, serif;
+}
+
+/* ── Reset & Base ───────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--nido-bg);
+  color: var(--nido-silver);
+  font-family: var(--nido-font-body);
+  overflow-x: hidden;
+}
+
+/* Patrón damasco como pseudo-fondo global */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Crect width='320' height='320' fill='%231c1f2e'/%3E%3Cellipse cx='160' cy='160' rx='28' ry='42' fill='%231a1d2e'/%3E%3Cellipse cx='160' cy='160' rx='42' ry='28' fill='%231a1d2e'/%3E%3Ccircle cx='160' cy='160' r='12' fill='%23232740'/%3E%3Ccircle cx='160' cy='148' r='5' fill='%23232740'/%3E%3Ccircle cx='160' cy='172' r='5' fill='%23232740'/%3E%3Ccircle cx='148' cy='160' r='5' fill='%23232740'/%3E%3Ccircle cx='172' cy='160' r='5' fill='%23232740'/%3E%3Cpath d='M160 118 Q170 100 185 95 Q200 90 205 105 Q210 120 195 125 Q180 130 170 120 Q165 112 160 118Z' fill='%23232740'/%3E%3Cpath d='M160 202 Q170 220 185 225 Q200 230 205 215 Q210 200 195 195 Q180 190 170 200 Q165 208 160 202Z' fill='%23232740'/%3E%3Cpath d='M118 160 Q100 170 95 185 Q90 200 105 205 Q120 210 125 195 Q130 180 120 170 Q112 165 118 160Z' fill='%23232740'/%3E%3Cpath d='M202 160 Q220 170 225 185 Q230 200 215 205 Q200 210 195 195 Q190 180 200 170 Q208 165 202 160Z' fill='%23232740'/%3E%3Cpath d='M130 130 Q118 115 110 108 Q102 100 108 94 Q114 88 122 96 Q130 104 128 118 Q126 128 130 130Z' fill='%23232740'/%3E%3Cpath d='M190 130 Q202 115 210 108 Q218 100 212 94 Q206 88 198 96 Q190 104 192 118 Q194 128 190 130Z' fill='%23232740'/%3E%3Cpath d='M130 190 Q118 205 110 212 Q102 220 108 226 Q114 232 122 224 Q130 216 128 202 Q126 192 130 190Z' fill='%23232740'/%3E%3Cpath d='M190 190 Q202 205 210 212 Q218 220 212 226 Q206 232 198 224 Q190 216 192 202 Q194 192 190 190Z' fill='%23232740'/%3E%3Cpath d='M0 0 Q20 10 30 28 Q38 44 28 52 Q18 60 10 48 Q2 36 12 22 Q18 12 0 0Z' fill='%23232740'/%3E%3Cpath d='M32 0 Q44 16 38 32 Q32 46 20 42 Q10 38 14 26 Q20 14 32 0Z' fill='%23232740'/%3E%3Cpath d='M0 32 Q16 44 32 38 Q46 32 42 20 Q38 10 26 14 Q14 20 0 32Z' fill='%23232740'/%3E%3Cpath d='M320 0 Q300 10 290 28 Q282 44 292 52 Q302 60 310 48 Q318 36 308 22 Q302 12 320 0Z' fill='%23232740'/%3E%3Cpath d='M288 0 Q276 16 282 32 Q288 46 300 42 Q310 38 306 26 Q300 14 288 0Z' fill='%23232740'/%3E%3Cpath d='M320 32 Q304 44 288 38 Q274 32 278 20 Q282 10 294 14 Q306 20 320 32Z' fill='%23232740'/%3E%3Cpath d='M0 320 Q20 310 30 292 Q38 276 28 268 Q18 260 10 272 Q2 284 12 298 Q18 308 0 320Z' fill='%23232740'/%3E%3Cpath d='M32 320 Q44 304 38 288 Q32 274 20 278 Q10 282 14 294 Q20 306 32 320Z' fill='%23232740'/%3E%3Cpath d='M0 288 Q16 276 32 282 Q46 288 42 300 Q38 310 26 306 Q14 300 0 288Z' fill='%23232740'/%3E%3Cpath d='M320 320 Q300 310 290 292 Q282 276 292 268 Q302 260 310 272 Q318 284 308 298 Q302 308 320 320Z' fill='%23232740'/%3E%3Cpath d='M288 320 Q276 304 282 288 Q288 274 300 278 Q310 282 306 294 Q300 306 288 320Z' fill='%23232740'/%3E%3Cpath d='M320 288 Q304 276 288 282 Q274 288 278 300 Q282 310 294 306 Q306 300 320 288Z' fill='%23232740'/%3E%3Cpath d='M160 0 Q172 12 168 28 Q164 42 152 40 Q140 38 140 26 Q140 12 160 0Z' fill='%23232740'/%3E%3Cpath d='M160 0 Q148 12 152 28 Q156 42 168 40 Q180 38 180 26 Q180 12 160 0Z' fill='%23232740'/%3E%3Cpath d='M160 320 Q172 308 168 292 Q164 278 152 280 Q140 282 140 294 Q140 308 160 320Z' fill='%23232740'/%3E%3Cpath d='M160 320 Q148 308 152 292 Q156 278 168 280 Q180 282 180 294 Q180 308 160 320Z' fill='%23232740'/%3E%3Cpath d='M0 160 Q12 172 28 168 Q42 164 40 152 Q38 140 26 140 Q12 140 0 160Z' fill='%23232740'/%3E%3Cpath d='M0 160 Q12 148 28 152 Q42 156 40 168 Q38 180 26 180 Q12 180 0 160Z' fill='%23232740'/%3E%3Cpath d='M320 160 Q308 172 292 168 Q278 164 280 152 Q282 140 294 140 Q308 140 320 160Z' fill='%23232740'/%3E%3Cpath d='M320 160 Q308 148 292 152 Q278 156 280 168 Q282 180 294 180 Q308 180 320 160Z' fill='%23232740'/%3E%3C/svg%3E");
+  background-size: 320px 320px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(14,15,24,0.6) 0%,
+    rgba(14,15,24,0.25) 50%,
+    rgba(14,15,24,0.6) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Contenido sobre los pseudo-elementos */
+nav, section, footer, .nido-divider { position: relative; z-index: 1; }
+
+/* ── Navbar ─────────────────────────────────────────── */
+.nido-nav {
+  background: rgba(14, 15, 24, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--nido-border);
+  transition: padding 0.3s, background 0.3s;
+}
+
+.nido-nav.scrolled {
+  background: rgba(10, 11, 18, 0.97);
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.nido-brand {
+  font-family: var(--nido-font-head);
+  font-size: 0.8rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--nido-silver2) !important;
+  text-decoration: none;
+}
+
+.nido-nav-link {
+  font-family: var(--nido-font-head);
+  font-size: 0.68rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--nido-silver3) !important;
+  transition: color 0.25s;
+  padding: 0.5rem 0.75rem;
+}
+
+.nido-nav-link:hover,
+.nido-nav-link.active { color: var(--nido-silver2) !important; }
+
+.nido-btn-outline {
+  font-family: var(--nido-font-head);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--nido-silver3);
+  border: 1px solid var(--nido-border2);
+  background: transparent;
+  transition: all 0.25s;
+}
+
+.nido-btn-outline:hover {
+  color: var(--nido-silver2);
+  border-color: var(--nido-silver2);
+  background: rgba(200, 205, 212, 0.08);
+}
+
+/* ── Hero ───────────────────────────────────────────── */
+.nido-hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.nido-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(14,15,24,0.75) 100%);
+  z-index: 0;
+}
+
+.nido-damask-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* ramas decorativas via clip */
+  background: 
+    radial-gradient(ellipse 2px 80px at 8% 100%, rgba(200,205,212,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 2px 80px at 92% 100%, rgba(200,205,212,0.07) 0%, transparent 100%);
+}
+
+.nido-logo-wrap {
+  width: 220px;
+  height: 220px;
+  animation: nidoFloat 6s ease-in-out infinite;
+  filter: drop-shadow(0 0 40px rgba(200,205,212,0.25));
+}
+
+.nido-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes nidoFloat {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-14px); }
+}
+
+.nido-subtitle {
+  font-family: var(--nido-font-head);
+  font-size: 0.72rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--nido-silver3);
+}
+
+.nido-title {
+  font-family: var(--nido-font-deco);
+  color: var(--nido-silver2);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.9), 0 0 60px rgba(200,205,212,0.1);
+}
+
+.nido-tagline {
+  font-style: italic;
+  color: rgba(200, 205, 212, 0.6);
+  max-width: 520px;
+  line-height: 1.75;
+}
+
+.nido-btn-hero {
+  font-family: var(--nido-font-head);
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--nido-silver2);
+  border: 1px solid rgba(200, 205, 212, 0.45);
+  background: rgba(14, 15, 24, 0.6);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s;
+  border-radius: 0 !important;
+}
+
+.nido-btn-hero:hover {
+  background: rgba(200, 205, 212, 0.12);
+  border-color: var(--nido-silver2);
+  color: var(--nido-silver2);
+}
+
+/* ── Dividers ───────────────────────────────────────── */
+.nido-divider {
+  position: relative;
+  z-index: 1;
+}
+
+.nido-divider::before,
+.nido-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,205,212,0.35));
+  transform: translateY(-50%);
+}
+
+.nido-divider::before { left: 5%; }
+.nido-divider::after  { right: 5%; background: linear-gradient(to left, transparent, rgba(200,205,212,0.35)); }
+
+.nido-gem {
+  font-family: var(--nido-font-head);
+  color: var(--nido-silver3);
+  letter-spacing: 8px;
+  font-size: 0.85rem;
+}
+
+/* ── Sections ───────────────────────────────────────── */
+.nido-section { position: relative; z-index: 1; }
+
+.nido-section-tag {
+  font-family: var(--nido-font-head);
+  font-size: 0.65rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--nido-silver3);
+}
+
+.nido-section-title {
+  font-family: var(--nido-font-deco);
+  color: var(--nido-silver2);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+}
+
+.nido-section-desc {
+  font-style: italic;
+  color: var(--nido-silver3);
+  max-width: 520px;
+  line-height: 1.75;
+}
+
+/* ── Cards de Servicios ─────────────────────────────── */
+.nido-card {
+  background: rgba(14, 15, 24, 0.65);
+  border: 1px solid var(--nido-border);
+  backdrop-filter: blur(6px);
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.3s;
+  border-radius: 0 !important;
+}
+
+.nido-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,205,212,0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nido-card:hover {
+  border-color: rgba(200, 205, 212, 0.35);
+  transform: translateY(-5px);
+}
+
+.nido-card:hover::before { opacity: 1; }
+
+.nido-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-family: var(--nido-font-head);
+  font-size: 0.58rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  background: rgba(200,205,212,0.08);
+  border: 1px solid rgba(200,205,212,0.22);
+  color: var(--nido-silver3);
+  border-radius: 0;
+}
+
+.nido-card-icon {
+  font-size: 1.8rem;
+  color: var(--nido-silver3);
+  line-height: 1;
+}
+
+.nido-card-title {
+  font-family: var(--nido-font-head);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--nido-silver2);
+  margin-bottom: 0.6rem;
+}
+
+.nido-card-text {
+  font-size: 0.88rem;
+  color: var(--nido-silver3);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* ── Lore Box ───────────────────────────────────────── */
+.nido-lore-box {
+  background: rgba(14, 15, 24, 0.6);
+  border: 1px solid rgba(200,205,212,0.18);
+  backdrop-filter: blur(8px);
+  position: relative;
+  border-radius: 0 !important;
+}
+
+.nido-lore-box::before,
+.nido-lore-box::after {
+  content: '◆';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--nido-silver3);
+  font-size: 0.6rem;
+}
+
+.nido-lore-box::before { top: -7px; }
+.nido-lore-box::after  { bottom: -7px; }
+
+/* Esquinas decorativas */
+.nido-lore-box .corner {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  opacity: 0.15;
+}
+.nido-lore-box .corner-tl { top: 8px; left: 8px; }
+.nido-lore-box .corner-tr { top: 8px; right: 8px; transform: scaleX(-1); }
+.nido-lore-box .corner-bl { bottom: 8px; left: 8px; transform: scaleY(-1); }
+.nido-lore-box .corner-br { bottom: 8px; right: 8px; transform: scale(-1,-1); }
+
+.nido-lore-text {
+  text-align: center;
+  color: rgba(200,205,212,0.72);
+  line-height: 1.9;
+  margin-bottom: 1rem;
+}
+
+.nido-lore-text strong { color: var(--nido-silver2); }
+
+/* ── Calendario / Events ────────────────────────────── */
+.nido-event-card {
+  background: rgba(14,15,24,0.65);
+  border: 1px solid var(--nido-border);
+  backdrop-filter: blur(6px);
+  transition: border-color 0.3s, transform 0.3s;
+  border-radius: 0 !important;
+}
+
+.nido-event-card:hover {
+  border-color: rgba(200,205,212,0.35);
+  transform: translateY(-4px);
+}
+
+.nido-event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.nido-event-num {
+  font-family: var(--nido-font-deco);
+  font-size: 2.5rem;
+  color: var(--nido-silver2);
+  line-height: 1;
+}
+
+.nido-event-month {
+  font-family: var(--nido-font-head);
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--nido-silver3);
+  text-transform: uppercase;
+}
+
+.nido-badge-outline {
+  font-family: var(--nido-font-head);
+  font-size: 0.58rem;
+  letter-spacing: 2px;
+  background: transparent !important;
+  border: 1px solid rgba(200,205,212,0.3) !important;
+  color: var(--nido-silver3) !important;
+  border-radius: 0 !important;
+}
+
+/* ── Footer ─────────────────────────────────────────── */
+.nido-footer {
+  background: rgba(10, 11, 18, 0.85);
+  border-top: 1px solid var(--nido-border);
+  position: relative;
+  z-index: 1;
+}
+
+.nido-hr {
+  border-color: rgba(200,205,212,0.12);
+}
+
+.nido-footer-link {
+  font-family: var(--nido-font-head);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--nido-silver3);
+  text-decoration: none;
+  transition: color 0.25s;
+}
+
+.nido-footer-link:hover { color: var(--nido-silver2); }
+
+.nido-footer-copy {
+  font-family: var(--nido-font-body);
+  font-size: 0.72rem;
+  color: rgba(138,144,153,0.45);
+  letter-spacing: 0.5px;
+}
+
+/* ── Reveal animation ───────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Navbar toggler dark theme ──────────────────────── */
+.navbar-toggler-icon {
+  filter: invert(0.7);
+}
+
+/* ── Responsive tweaks ──────────────────────────────── */
+@media (max-width: 767px) {
+  .nido-title { font-size: clamp(2rem, 10vw, 3rem); }
+  .nido-logo-wrap { width: 160px; height: 160px; }
+  .nido-divider::before { width: 15%; }
+  .nido-divider::after  { width: 15%; }
+  .nido-lore-box { padding: 2rem 1.25rem !important; }
+  .nido-hero .container { padding-top: 5rem !important; }
+}
+
+@media (max-width: 575px) {
+  .nido-nav-link { font-size: 0.75rem; }
+}
