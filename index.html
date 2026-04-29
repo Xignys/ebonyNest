@@ -236,6 +236,26 @@
       </div>
     </div>
   </footer>
-
+  <!-- Bootstrap JS 5.3.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => revealObs.observe(el));
+    // Navbar shrink
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nido-nav').classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
 </body>
 </html>
